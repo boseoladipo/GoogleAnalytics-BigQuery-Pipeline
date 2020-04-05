@@ -1,0 +1,10 @@
+pandas
+psycopg2
+pytz
+pandas_gbq
+sqlalchemy
+requests
+google-api-python-client
+oauth2client
+# google-cloud-storage
+google-cloud-error-reporting
