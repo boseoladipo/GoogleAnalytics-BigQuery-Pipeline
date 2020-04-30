@@ -5,15 +5,11 @@ from string import Template
 
 import google.auth
 import pandas as pd
-import psycopg2
 from apiclient.discovery import build
 from google.cloud import error_reporting
 from pytz import timezone
-from sqlalchemy import create_engine
 
 import config
-from optimize_insert import psql_insert_copy
-from sql_functions import delete_from_sql, push_data_to_sql
 
 SCHEMA_NAME = 'ga_staging'
 client = error_reporting.Client(service="get_ga_bq_data")
